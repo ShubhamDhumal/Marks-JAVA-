@@ -4,7 +4,7 @@ public class Marks
 	{
 		int m1,m2,m3,m4,m5;
 		int a[]=new int[5];
-		int tot,mks_req;
+		int tot,mks,mks_req;
 		int temp;
 		float per;
 		m1=Integer.parseInt(args[0]);
@@ -39,6 +39,7 @@ public class Marks
 			System.out.println("The Subjech which has less marks are "+a[0]);
 			System.out.print("To Pass You Need More ");
 			mks_req=300-tot;
+			mks=mks_req+a[0];
 			System.out.println(mks_req+" marks.");
 		}
 		else
